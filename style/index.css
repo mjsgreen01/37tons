@@ -1,0 +1,407 @@
+/*CSS Reset*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	/*min-width: 1307px;*/
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+html{
+	font-size: 16px;
+	/*Base-width for percentages in 1440px*/
+}
+a{
+	text-decoration: none;
+}
+a {color:inherit;}      /* unvisited link */
+a:visited {color:inherit;}  /* visited link */
+a:hover {color:inherit;}  /* mouse over link */
+a:active {color:inherit;}  /* selected link */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.headSec{
+	width: 100%;
+	height: 70px;
+	background-color: black;
+	position: fixed;
+	color: white;
+	font-family: 'Roboto';
+	-webkit-box-shadow: 0px 0px 15px 1px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 15px 1px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 15px 1px rgba(0,0,0,0.75);
+}
+.headSec .logo{
+	float: left;
+	font-size: 37px;
+	font-weight: 900;
+	margin-left: 100px;
+	margin-top: 13px;
+	display: inline-block;
+}
+.headSec .logo span{
+	color: red;
+}
+.headSec .logo p{
+	display: inline-block;
+font-size: 19px;
+margin-left: 8px;
+font-weight: 300;
+}
+.headSec nav{
+	float: right;
+	display: inline-block;
+	margin-top: 22px;
+	margin-right: 120px;
+	font-size: 26px;
+	font-weight: 500;
+}
+
+
+
+
+.homeBody{
+	width: 100%;
+	padding-top: 70px;
+}
+.homeBody .sec1{
+	width: 100%;
+	height: 800px;
+	overflow: hidden;
+}
+.sec1{
+	background: url(boatAndDog3.jpg) no-repeat 15% center;
+	-webkit-background-size: cover;  
+  	-moz-background-size: cover;  
+  	-o-background-size: cover;  
+  	background-size: cover;
+  	overflow: hidden;
+  	background-attachment: fixed;
+  	
+}
+.circleContain{
+	width: 500px;
+	height: 500px;
+	margin: 0 auto;
+	margin-top: 50px;
+	position: fixed;
+	left: 50%;
+	margin-left: -250px;
+	overflow: hidden;
+}
+@-webkit-keyframes icongrow {
+    0%{
+        width: 350px;
+        height: 350px;
+        margin-left: -175px;
+        background-position-x: -123px;
+        margin-top: 125px;
+        -webkit-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.75);
+		-moz-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.75);
+		box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.75);
+    }
+    
+    50% {
+        width: 370px;
+        height: 370px;
+        margin-left: -183px;
+        background-position-x: -131px;
+        margin-top: 115px;
+        -webkit-box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.75);
+		-moz-box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.75);
+		box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.75);
+    }
+    100%{
+    	width: 350px;
+    	height: 350px;
+    	margin-left: -175px;
+    	background-position-x: -123px;
+    	margin-top: 125px;
+    	-webkit-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.75);
+		-moz-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.75);
+		box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.75);
+    }
+}
+.circleContain .circle{
+
+	border-radius: 100%;
+	width: 350px;
+	height: 350px;
+	margin: 0 auto;
+	margin-top: 125px;
+	position: absolute;
+	left: 50%;
+	margin-left: -175px;
+	background: url(prisonOrColombia.jpeg) no-repeat center center;
+	overflow: hidden;
+	background-position-x: -123px;
+	background-position-y: -3px;
+	background-size: 150%;
+	-webkit-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.75);
+	-webkit-animation-duration: 0.5s;
+/*		-webkit-transition: all .15s ease-out;
+  -moz-transition: all .15s ease-out;
+  -o-transition: all .15s ease-out;
+  transition: all .15s ease-out;*/
+}
+.circleContain .circle:hover{
+	-webkit-animation-name: icongrow;
+      -webkit-animation-fill-mode: forwards;
+}
+
+
+
+
+
+
+
+
+.circleLink{
+	float:left;
+	position: absolute;
+	-webkit-transition: all .15s ease-out;
+  -moz-transition: all .15s ease-out;
+  -o-transition: all .15s ease-out;
+  transition: all .15s ease-out;
+}
+
+/*.aboutTab img{
+	height: 213px;
+}
+.bookTab img{
+	width: 496px;
+}
+.linksTab img{
+	width: 133px;
+}*/
+.circleLink img{
+	width: 100%;
+
+}
+
+.circleContain .aboutTab{
+margin-left: -330px;
+margin-top: 21px;
+	width: 466px;
+	height: auto;
+}
+.circleContain .bookTab{
+margin-left: 357px;
+margin-top: 18px;
+	width: 466px;
+	height: auto;
+}
+.circleContain .linksTab{
+	margin-left: 17.5px;
+	margin-top: -58px;
+	width: 466px;
+	height: auto;
+
+}
+.linksTab a{
+display: inline-block;
+margin-top: 230px;
+margin-left: 114px;
+position:absolute;
+}
+.linksTab a div{
+		height: 100px;
+width: 240px;
+}
+
+
+
+
+/*ON HOVER OF CIRCLE CONTAINER, APPLY THESE*/
+
+
+
+.linksTabOut a{
+	margin-top: 180px;
+}
+.circleContain .aboutTabOut{
+	margin-left: -371px;
+	margin-top: -1px;
+	width: 466px;
+	height: auto;
+}
+.circleContain .bookTabOut{
+margin-left: 399px;
+margin-top: -1px;
+	width: 466px;
+	height: auto;
+}
+.circleContain .linksTabOut{
+margin-left: 17.5px;
+margin-top: -117px;
+	width: 466px;
+	height: auto;
+
+}
+/*.circleContain .circleOut{
+		width: 360px;
+	height: 360px;
+		margin-left: -180px;
+}
+*/
+
+footer{
+	width: 100%;
+	background-color: black;
+	color: white;
+	font-family: 'Roboto';
+	overflow: hidden;
+	position: absolute;
+}
+.footContain{
+	height: 70px;
+	text-align: center;
+	font-weight: 300;
+	font-size: 19px;
+	line-height: 25px;
+	margin-top: 9px;
+}
+.emailLink{
+	color: red;
+}
+
+
+
+
+
+
+
+
+.buyContain{
+	margin: 0 auto;
+	width: 900px;
+	font-family: 'Roboto';
+	color: black;
+	margin-top: 55px;
+}
+.buyContain h1{
+	font-weight: 700;
+	font-size: 40px;
+	margin-top: 30px;
+	text-align: center;
+}
+.buyContain h1:after{
+    content:' ';
+    display:block;
+    border: 1px solid #414040;
+	width: 295px;
+	margin: 0 auto;
+	margin-top: 7px;
+}
+.buyContain h1 span{
+	color: red;
+}
+.printContain{
+	display: inline-block;
+	width: 880px;
+	float: left;
+	background-color: rgba(255, 255, 255, 0.8);
+	height: 600px;
+		border-radius: 15px;
+}
+.ebookContain{
+	display: inline-block;
+	width: 440px;
+	text-align: center;
+	float: right;
+	background-color: rgba(0, 0, 0, 0.4);
+	height: 300px;
+	border-radius: 10%;
+}
+.buyContain ul{
+	margin-top: 30px;
+	font-size: 18px;
+	display: inline-block;
+	margin-left: 60px;
+}
+.buyContain ul li{
+	margin-top: 50px;
+}
+.buyContain .frontCover{
+	width: 260px;
+	float: right;
+	margin-right: 60px;
+	margin-top: 50px;
+}
+.buyContain .frontCover img{
+	width: 100%;
+}
+
+.buyContain li:nth-child(1) img{
+	width: 180px;
+	margin-bottom: -20px;
+}
+.buyContain li:nth-child(2) img{
+	width: 200px;
+	margin-bottom: -4px;
+}
+.buyContain li:nth-child(3) img{
+
+	margin-bottom: -6px;
+}
