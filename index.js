@@ -5,7 +5,7 @@ $(document).ready(function(){
 
 	var winHeight = $(window).height();
 
-	if (winHeight>800 || winHeight<600) {
+	if (winHeight>1080) {
 		function homeResize () {
 			$('.homeBody .sec1').css('height',winHeight);
 		}
