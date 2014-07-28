@@ -227,49 +227,23 @@ font-weight: 300;
   transition: all .15s ease-out;
 }
 
-/*.aboutTab img{
-	height: 213px;
-}
-.bookTab img{
-	width: 496px;
-}
-.linksTab img{
-	width: 133px;
-}*/
-.circleLink img{
-	width: 100%;
 
-}
 
-.circleContain .aboutTab{
-margin-left: -330px;
-margin-top: 21px;
-	width: 466px;
-	height: auto;
-}
-.circleContain .bookTab{
-margin-left: 357px;
-margin-top: 18px;
-	width: 466px;
-	height: auto;
-}
+
+
 .circleContain .linksTab{
-	margin-left: 17.5px;
-	margin-top: -58px;
-	width: 466px;
-	height: auto;
 
+	display: inline-block;
+	position: relative;
+	left: 50%;
+	color: white;
+	font-family: 'Roboto';
+	font-size: 28px;
+	margin-top: 140px;
+	letter-spacing: 1px;
+	font-weight: 700;
 }
-.linksTab a{
-display: inline-block;
-margin-top: 230px;
-margin-left: 114px;
-position:absolute;
-}
-.linksTab a div{
-		height: 100px;
-width: 240px;
-}
+
 
 
 
@@ -281,23 +255,10 @@ width: 240px;
 .linksTabOut a{
 	margin-top: 180px;
 }
-.circleContain .aboutTabOut{
-	margin-left: -371px;
-	margin-top: -1px;
-	width: 466px;
-	height: auto;
-}
-.circleContain .bookTabOut{
-margin-left: 399px;
-margin-top: -1px;
-	width: 466px;
-	height: auto;
-}
 .circleContain .linksTabOut{
-margin-left: 17.5px;
-margin-top: -117px;
-	width: 466px;
-	height: auto;
+margin-top: 92px;
+
+
 
 }
 /*.circleContain .circleOut{
