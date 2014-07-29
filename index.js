@@ -35,8 +35,6 @@ $(document).ready(function(){
 
 
 	$('.circle').hover(function(){
-		$('.aboutTab').toggleClass('aboutTabOut');
-		$('.bookTab').toggleClass('bookTabOut');
 		$('.linksTab').addClass('linksTabOut');
 		$('.circle').toggleClass('circleOut');
 	});

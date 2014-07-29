@@ -48,7 +48,10 @@
 						
 							<!-- <a href="buy/index.html"><div></div></a>
 								<img src="style/popOutWhite3.png"> -->
-							<a href="buy/index.html"><h2 id="availHere">AVAILABLE HERE</h2></a>
+							<a href="buy/index.html">
+								<h2 id="availHere">AVAILABLE HERE</h2>
+								<h2 id="availHereSmall">AVAILABLE HERE</h2><!-- Shown only on small page -->
+							</a>
 						
 					</div>
 					<a href="buy/index.html"><div class="circle"></div></a>
@@ -84,6 +87,18 @@
         <script src="circletype.min.js"></script>
         <script type="text/javascript">
         	$('#availHere').circleType({radius: 215});
+        	$('#availHereSmall').circleType({radius: 175});
+        	$(window).resize(function(){
+        		var wwidth = $(window).width();
+        		if (wwidth<=401) {
+	        		$('#availHereSmall').circleType({radius: 175});
+	        	}
+	        	else if((wwidth>401)&&(wwidth<500)){
+	        		$('#availHere').circleType({radius: 215});
+	        	}
+        	});
+	        	
+        	
         </script>
 
 

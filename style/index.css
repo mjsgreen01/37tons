@@ -243,6 +243,9 @@ font-weight: 300;
 	letter-spacing: 1px;
 	font-weight: 700;
 }
+#availHereSmall{
+	display: none;
+}
 
 
 
@@ -412,6 +415,14 @@ footer{
 	.headSec .logo {
 	margin-left: 30px;
 	}
+	.aboutBook{
+		width: 430px;
+		font-size: 17px;
+		line-height: 23px;
+	}
+	.footContain {
+		height: 90px;
+	}
 }
 @media screen and (max-width: 495px){
 	.headSec .logo{
@@ -426,13 +437,57 @@ footer{
 	.circleContain {
 		width: 300px;
 	}
+	.aboutBook{
+		width: 370px;
+		font-size: 16px;
+		line-height: 22px;
+	}
+	.footContain {
+		height: 120px;
+		font-size: 18px;
+	}
 }
 @media screen and (max-width: 405px){
 	.headSec .logo{
-		margin-top: 14px;
+
+		margin-left: 15px;
+	}
+	.circleContain .circle{
+		width: 270px;
+		height: 270px;
+		margin-left: -135px;
+		background-position: -93px -3px;
+	}
+	.circleContain{
+		margin-top: -50px;
+	}
+	.circleContain .linksTab{
+		font-size: 25px;
+	}
+	#availHere{
+		display: none;
+	}
+	#availHereSmall{
+		display: block;
+	}
+	.sec1{
+		background-position: 3% center;
+	}
+	.aboutBook{
+		width: 300px;
+		font-size: 15px;
+		line-height: 21px;
+	}
+	.aboutBookContain {
+		margin-top: 70px;
 	}
 }
+@media screen and (max-width: 391px){
+	.headSec .logo{
+		margin-top: 14px;
 
+	}
+}
 
 
 
