@@ -42,7 +42,9 @@
 
 
 		<div class="homeBody">
+			<div class="mobileBackContain"><img class="mobileBack" src="style/boatAndDog4.jpg"></div>
 			<div class="sec1">
+				
 				<div class="circleContain">
 					<div class="linksTab circleLink">
 						
@@ -88,6 +90,8 @@
         <script type="text/javascript">
         	$('#availHere').circleType({radius: 215});
         	$('#availHereSmall').circleType({radius: 175});
+
+        	//adjust circleType on window.resize
         	$(window).resize(function(){
         		var wwidth = $(window).width();
         		if (wwidth<=401) {
@@ -97,7 +101,13 @@
 	        		$('#availHere').circleType({radius: 215});
 	        	}
         	});
-	        	
+	        
+	        var winHeight = $(window).height();
+
+			function homeResize () {
+				$('.mobileBack').css('height',winHeight*1.2);
+			}
+			homeResize();
         	
         </script>
 
