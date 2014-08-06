@@ -343,7 +343,7 @@ footer{
 	width: 100%;
 	float: left;
 	background-color: rgba(255, 255, 255, 0.8);
-	height: 600px;
+	height: 980px;
 		border-radius: 15px;
 }
 .ebookContain{
@@ -385,6 +385,30 @@ footer{
 .buyContain li:nth-child(3) img{
 
 	margin-bottom: -6px;
+}
+.reviewAndAbout{
+	clear: both;
+	width: 86%;
+	margin: 0 auto;
+	font-family: "Droid Serif";
+}
+.reviewContain, .aboutContain{
+	width: 46%;
+	display: inline-block;
+	margin-top: 45px;
+}
+.reviewAndAbout h2{
+	font-size: 24px;
+font-family: 'Roboto';
+font-weight: 700;
+}
+.reviewAndAbout p{
+	margin-top: 10px;
+font-size: 17px;
+line-height: 20px;
+}
+.aboutContain{
+	float: right;
 }
 
 
