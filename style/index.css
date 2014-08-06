@@ -502,6 +502,11 @@ line-height: 20px;
 	.buyContain h1 {
 		font-size: 34px;
 	}
+	.reviewContain, .aboutContain{
+		margin-top: 50px;
+		width: 100%;
+	}
+	
 }
 @media screen and (max-width: 600px){
 	.headSec .logo {
@@ -568,6 +573,15 @@ line-height: 20px;
 	}
 	.buyContain h1:after {
 	width: 254px;
+	}
+	.homeBody .sec1{
+		height: 1230px;
+	}
+	.printContain{
+		height: 1130px;
+	}
+	.reviewAndAbout h2{
+		font-size: 22px;
 	}
 }
 @media screen and (max-width: 405px){
