@@ -20,6 +20,16 @@
 		  ga('send', 'pageview');
 
 		</script>
+		<script>
+			/*Function that tracks a click on an outbound link in Google Analytics.*/
+			var trackOutboundLink = function(url) {
+			   ga('send', 'event', 'outbound', 'click', url, {'hitCallback':
+			     function () {
+			     document.location = url;
+			     }
+			   });
+			}
+		</script>
 		
 		<script type="text/javascript" src="../index.js"></script>
 		<title>37 Tons</title>
@@ -48,19 +58,19 @@
 							<h1>Buy The Book</h1>
 							<ul>
 								<li>
-									<a href="http://www.amazon.com/37-Tons-Mr-David-Victorson/dp/0578138646/ref=sr_1_2?s=books&ie=UTF8&qid=1394373053&sr=1-2&keywords=37+tons">
+									<a href="http://www.amazon.com/37-Tons-Mr-David-Victorson/dp/0578138646/ref=sr_1_2?s=books&ie=UTF8&qid=1394373053&sr=1-2&keywords=37+tons" onclick="trackOutboundLink('http://www.amazon.com/37-Tons-Mr-David-Victorson/dp/0578138646/ref=sr_1_2?s=books&ie=UTF8&qid=1394373053&sr=1-2&keywords=37+tons'); return false;">
 										<img src="../style/amazonLogo.png">
 									</a>
 									 - Print & eBook
 								</li>
 								<li>
-									<a href = "http://www.barnesandnoble.com/w/37-tons-david-victorson/1118864324?ean=2940149506064">
+									<a href = "http://www.barnesandnoble.com/w/37-tons-david-victorson/1118864324?ean=2940149506064" onclick="trackOutboundLink('http://www.barnesandnoble.com/w/37-tons-david-victorson/1118864324?ean=2940149506064'); return false;">
 										<img src="../style/barnesNoble.png">
 									</a>
 									 - eBook only
 								</li>
 								<li>
-									<a href = "https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewGrouping?cc=us&id=27820">
+									<a href = "https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewGrouping?cc=us&id=27820" onclick="trackOutboundLink('https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewGrouping?cc=us&id=27820'); return false;">
 										<img src="../style/ibooks.png">
 									</a>
 									 - eBook only
